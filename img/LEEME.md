@@ -1,12 +1,23 @@
 # Fotos de NÖMA
 
-Mientras no haya fotos, cada imagen del sitio es una ilustración en SVG (`js/arte.js`) con la paleta de la marca.
-Para reemplazar una por una foto real:
+Las fotos viven en esta carpeta y se asignan a cada lugar del sitio en `js/fotos.js`, con su encuadre:
 
-1. Guardá la foto en esta carpeta con el nombre de la tabla (formato `.webp`, calidad ~80).
-2. Agregá el nombre del archivo a `js/fotos.js`, por ejemplo: `window.NOMA_FOTOS = ['hero.webp'];`
+```js
+'vela-ambar-1.webp': { archivo: 'vela-ambar.webp', pos: '50% 72%' },
+```
 
-Las fotos se recortan solas para llenar su espacio (`object-fit: cover`), así que conviene dejar aire alrededor del motivo.
+- La clave es el **lugar** del sitio (tablas de abajo). `archivo` es la foto de esta carpeta. Una misma foto puede usarse en varios lugares.
+- `pos` es el punto que queda a la vista cuando la foto se recorta (como `object-position`: horizontal y vertical en %).
+- Si un lugar no está en `js/fotos.js`, se muestra la ilustración de `js/arte.js`.
+
+## Pendientes para completar la sesión
+
+Hoy cada producto tiene una sola foto propia: su hover y su ambiente toman fotos de otras escenas. Para que quede redondo faltan:
+
+- `jarron-arco` (hoy usa el jarrón en arco de la portada), `mood-ritual` (usa `set-ritual.webp`) y `comunidad-vela` (usa `vela-ambar.webp`).
+- Una segunda foto de cada producto (hover) y una en ambiente.
+- Etiquetas con la marca NÖMA: varias fotos tienen otros nombres en el packaging (Ember & Oak, Cozy Corner, Sage & Eucalyptus, Lavender).
+- Fotos verticales. Todas son horizontales (1376 × 768) y se recortan para llenar lugares verticales; en pantallas grandes conviene subir de 1600 px de ancho para arriba.
 
 ## Home
 

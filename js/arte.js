@@ -351,16 +351,23 @@
   };
 
   /* ---------------------------------------------------------------- Pintar */
-  const fotos = new Set(window.NOMA_FOTOS || []);
+  // Acepta una lista de archivos o un mapa { lugar: { archivo, pos } } (ver js/fotos.js)
+  const crudo = window.NOMA_FOTOS || {};
+  const fotos = Array.isArray(crudo) ? Object.fromEntries(crudo.map((f) => [f, { archivo: f }])) : crudo;
 
   function pintar(el) {
     if (el.dataset.pintado) return;
     const clave = el.dataset.arte;
     const [tipo, nombre, idx] = clave.split(':'); // "escena:hero" | "producto:vela-ambar:0" | "suelto:vela"
-    const archivo = el.dataset.foto;
-    if (archivo && fotos.has(archivo)) {
+    // Las imágenes de producto buscan su foto aunque no tengan data-foto (miniaturas, menú, carrito)
+    const lugar = el.dataset.foto || (tipo === 'producto' ? `${nombre}-${(Number(idx) || 0) + 1}.webp` : '');
+    const foto = lugar && fotos[lugar];
+    if (foto) {
       const img = new Image();
-      img.src = `img/${archivo}`;
+      img.src = `img/${foto.archivo}`;
+      if (foto.pos) img.style.objectPosition = foto.pos;
+      img.width = 1376;
+      img.height = 768;
       img.alt = el.dataset.alt || '';
       img.loading = el.dataset.eager ? 'eager' : 'lazy';
       img.decoding = 'async';

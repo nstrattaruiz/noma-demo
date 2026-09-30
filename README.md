@@ -22,7 +22,7 @@ Lleva los detalles que se repiten en todas mis webs, adaptados a la paleta de N�
 
 - HTML, CSS y JavaScript sin frameworks ni dependencias. Se sirve como sitio estático (GitHub Pages).
 - Tipografías: Cormorant Garamond + Jost (Google Fonts).
-- Las imágenes son ilustraciones SVG generadas con la paleta de la marca (`js/arte.js`), livianas y nítidas en cualquier pantalla. Se reemplazan por fotos reales sin tocar el HTML (ver `img/LEEME.md`).
+- Fotos en `img/`, asignadas a cada lugar del sitio con su encuadre en `js/fotos.js` (ver `img/LEEME.md`). Donde falta una foto se muestra una ilustración SVG con la paleta de la marca (`js/arte.js`).
 - Móvil primero: probado en 375, 390, 768, 1024, 1280 y 1440 px. Botones táctiles de 44 px, sin hover obligatorio.
 - Accesible: navegación por teclado, foco visible, `aria` en paneles y botones de ícono, se respeta *reducir movimiento*.
 - El catálogo (`js/productos.js`) usa la misma estructura que Shopify (handle, variantes, colección, tags), así el diseño se puede llevar a un tema Liquid.
@@ -38,7 +38,7 @@ css/noma.css        Estilos de NÖMA
 js/productos.js     Catálogo
 js/layout.js        Header, menú, carrito, buscador, newsletter y footer
 js/arte.js          Ilustraciones SVG
-js/fotos.js         Lista de fotos reales disponibles en img/
+js/fotos.js         Qué foto va en cada lugar y con qué encuadre
 js/noma.js          Carrito, filtros, producto e interacciones
 js/ns-firma.js      Firma NS
 ```
