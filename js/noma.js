@@ -57,6 +57,12 @@
   const variantes = (p) => p.opcion?.valores ?? [{ v: null, precio: p.precio }];
   const primeraDisponible = (p) => variantes(p).find((v) => !v.agotado) ?? variantes(p)[0];
   const precioDe = (p, v) => variantes(p).find((x) => x.v === v)?.precio ?? p.precio;
+  // Fotos: con fotos cargadas se muestran solo las vistas que existen; sin fotos, todas las ilustraciones
+  const mapaFotos = window.NOMA_FOTOS || {};
+  const hayFotos = Array.isArray(mapaFotos) ? mapaFotos.length > 0 : Object.keys(mapaFotos).length > 0;
+  const tieneFoto = (k) => (Array.isArray(mapaFotos) ? mapaFotos.includes(k) : Boolean(mapaFotos[k]));
+  const tieneHover = (id) => !hayFotos || tieneFoto(`${id}-2.webp`);
+
   const desde = (p) => new Set(variantes(p).map((v) => v.precio)).size > 1;
 
   function etiquetas(p) {
@@ -73,7 +79,7 @@
       <div class="card__marco">
         <a class="card__media" href="producto.html?p=${p.id}" tabindex="-1" aria-hidden="true">
           <div class="arte arte--1" data-arte="producto:${p.id}:0" data-foto="${p.id}-1.webp" data-alt="${p.nombre}"${eager ? ' data-eager="1"' : ''}></div>
-          <div class="arte arte--2" data-arte="producto:${p.id}:1" data-foto="${p.id}-2.webp"></div>
+          ${tieneHover(p.id) ? `<div class="arte arte--2" data-arte="producto:${p.id}:1" data-foto="${p.id}-2.webp"></div>` : ''}
         </a>
         <div class="card__etiquetas">${etiquetas(p)}</div>
         <button class="agregar" type="button" data-agregar="${p.id}" data-variante="${v.v ?? ''}" aria-label="Agregar ${p.nombre} al carrito">
@@ -626,7 +632,8 @@
     let variante = primeraDisponible(p).v;
     document.title = `${p.nombre} · NÖMA`;
 
-    const vistas = [0, 1, 2];
+    // Con fotos, la galería muestra la principal (y la segunda si existe); la de ambiente va en "Sobre este producto"
+    const vistas = hayFotos ? [0, ...(tieneHover(p.id) ? [1] : [])] : [0, 1, 2];
     caja.innerHTML = `
       <div class="wrap">
         <ol class="migas">
@@ -643,7 +650,7 @@
                 )
                 .join('')}
             </div>
-            <span class="galeria__contador" aria-hidden="true"><span data-foto-n>1</span> / ${vistas.length}</span>
+            <span class="galeria__contador" aria-hidden="true"${vistas.length < 2 ? ' hidden' : ''}><span data-foto-n>1</span> / ${vistas.length}</span>
           </div>
 
           <div class="prod__info">

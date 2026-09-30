@@ -12,10 +12,10 @@ Las fotos viven en esta carpeta y se asignan a cada lugar del sitio en `js/fotos
 
 ## Pendientes para completar la sesión
 
-Hoy cada producto tiene una sola foto propia: su hover y su ambiente toman fotos de otras escenas. Para que quede redondo faltan:
+Cada producto muestra una sola foto (la `-1`). Si agregás una `-2`, aparece sola al pasar el mouse y como segunda foto de la galería. La `-3` (ambiente del bloque "Sobre este producto") repite escenas de la home. Para que quede redondo faltan:
 
 - `jarron-arco` (hoy usa el jarrón en arco de la portada), `mood-ritual` (usa `set-ritual.webp`) y `comunidad-vela` (usa `vela-ambar.webp`).
-- Una segunda foto de cada producto (hover) y una en ambiente.
+- Opcional: una segunda foto de cada producto (hover) y una en ambiente propia.
 - Etiquetas con la marca NÖMA: varias fotos tienen otros nombres en el packaging (Ember & Oak, Cozy Corner, Sage & Eucalyptus, Lavender).
 - Fotos verticales. Todas son horizontales (1376 × 768) y se recortan para llenar lugares verticales; en pantallas grandes conviene subir de 1600 px de ancho para arriba.
 

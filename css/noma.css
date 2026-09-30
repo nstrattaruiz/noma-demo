@@ -3816,3 +3816,21 @@ html.panel-abierto .ns-top {
 .hoja fieldset > :not(legend) {
   clear: both;
 }
+
+/* Objetos flotantes con foto: recorte en arco */
+.flota:has(img) {
+  aspect-ratio: 4 / 5;
+}
+
+.flota img {
+  position: static;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 999px 999px 6px 6px;
+  box-shadow: 0 22px 40px -22px rgb(var(--ink-rgb) / 0.45);
+}
+
+.galeria__contador[hidden] {
+  display: none !important;
+}

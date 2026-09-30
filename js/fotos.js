@@ -28,36 +28,33 @@ window.NOMA_FOTOS = {
   'coleccion-banda.webp': { archivo: 'coleccion-banda.webp', pos: '50% 50%' },
   'tile-coleccion.webp': { archivo: 'tile-coleccion.webp', pos: '50% 60%' },
 
-  // Productos: -1 principal, -2 al pasar el mouse, -3 ambiente
+  // Productos: -1 es la foto del producto (galería y cards). -2 (opcional) aparece al pasar el mouse y como
+  // segunda foto de la galería. -3 es el ambiente del bloque "Sobre este producto".
   'vela-ambar-1.webp': { archivo: 'vela-ambar.webp', pos: '50% 72%' },
-  'vela-ambar-2.webp': { archivo: 'hero.webp', pos: '61% 78%' },
   'vela-ambar-3.webp': { archivo: 'mood-calma.webp', pos: '50% 60%' },
 
   'vela-santal-1.webp': { archivo: 'vela-santal.webp', pos: '51% 60%' },
-  'vela-santal-2.webp': { archivo: 'mood-calma.webp', pos: '50% 60%' },
   'vela-santal-3.webp': { archivo: 'comunidad-dormitorio.webp', pos: '50% 50%' },
 
   'difusor-bosque-1.webp': { archivo: 'difusor-bosque.webp', pos: '49% 60%' },
-  'difusor-bosque-2.webp': { archivo: 'set-ritual-1.webp', pos: '58% 55%' },
   'difusor-bosque-3.webp': { archivo: 'comunidad-detalle.webp', pos: '50% 55%' },
 
   'jarron-arco-1.webp': { archivo: 'hero.webp', pos: '48% 75%' },
-  'jarron-arco-2.webp': { archivo: 'tile-coleccion.webp', pos: '50% 60%' },
   'jarron-arco-3.webp': { archivo: 'mood-tierra.webp', pos: '37% 70%' },
 
   'bandeja-terra-1.webp': { archivo: 'bandeja-terra.webp', pos: '60% 60%' },
-  'bandeja-terra-2.webp': { archivo: 'set-ritual-1.webp', pos: '50% 70%' },
   'bandeja-terra-3.webp': { archivo: 'comunidad-mesa.webp', pos: '52% 60%' },
 
   'cuenco-siena-1.webp': { archivo: 'cuenco-siena.webp', pos: '44% 65%' },
-  'cuenco-siena-2.webp': { archivo: 'mood-tierra.webp', pos: '66% 70%' },
   'cuenco-siena-3.webp': { archivo: 'comunidad-ceramica.webp', pos: '50% 50%' },
 
   'manta-lino-1.webp': { archivo: 'manta-lino.webp', pos: '55% 55%' },
-  'manta-lino-2.webp': { archivo: 'comunidad-living.webp', pos: '52% 65%' },
   'manta-lino-3.webp': { archivo: 'comunidad-dormitorio.webp', pos: '78% 60%' },
 
   'set-ritual-1.webp': { archivo: 'set-ritual-1.webp', pos: '52% 60%' },
-  'set-ritual-2.webp': { archivo: 'set-ritual.webp', pos: '64% 55%' },
   'set-ritual-3.webp': { archivo: 'mood-calma.webp', pos: '50% 60%' },
+
+  // Objetos flotantes de "Encontrá un rincón para cada cosa"
+  'rincon-taza.webp': { archivo: 'editorial-detalle.webp', pos: '50% 50%' },
+  'rincon-planta.webp': { archivo: 'comunidad-living.webp', pos: '31% 45%' },
 };
