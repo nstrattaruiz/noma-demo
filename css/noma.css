@@ -716,7 +716,7 @@ a:hover .logo__semilla {
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  min-height: max(680px, min(100svh, 1040px));
+  min-height: max(680px, 100svh);
   background: var(--cream);
 }
 
