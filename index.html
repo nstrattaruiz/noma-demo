@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NÖMA · Pequeños objetos. Grandes espacios.</title>
+  <meta name="description" content="Velas, cerámica y objetos para el hogar. Diseño, aromas y pequeños rituales para hacer de tu espacio un lugar más tuyo.">
+  <meta name="theme-color" content="#F5F1EA">
+  <meta property="og:title" content="NÖMA · Pequeños objetos. Grandes espacios.">
+  <meta property="og:description" content="Diseño, aromas y pequeños rituales para hacer de tu espacio un lugar más tuyo.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="css/ns-firma.css">
+  <link rel="stylesheet" href="css/noma.css">
+  <script src="js/fotos.js" defer></script>
+  <script src="js/productos.js" defer></script>
+  <script src="js/layout.js" defer></script>
+  <script src="js/arte.js" defer></script>
+  <script src="js/ns-firma.js" defer></script>
+  <script src="js/noma.js" defer></script>
+</head>
+<body data-pagina="inicio">
+  <main id="contenido">
+
+    <!-- 01 · Portada -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="hero__texto">
+        <p class="hero__indice eyebrow hero__aparece" style="--d:.9s"><b>01</b> / 06 <span style="opacity:.5">—</span> Otoño 2026</p>
+        <h1 class="display hero__titulo lineas" id="hero-titulo">
+          <span class="l" style="--i:0"><span>Objetos</span></span>
+          <span class="l" style="--i:1"><span>para vivir</span></span>
+          <span class="l" style="--i:2"><span><em>bonito.</em></span></span>
+        </h1>
+        <p class="lead hero__aparece" style="--d:.75s">Diseño, aromas y pequeños rituales para hacer de tu espacio un lugar más tuyo.</p>
+        <div class="hero__ctas hero__aparece" style="--d:.9s">
+          <a class="btn" href="coleccion.html">Explorar colección <svg class="icono flecha" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          <a class="link" href="#historia">Descubrir NÖMA</a>
+        </div>
+      </div>
+
+      <figure class="hero__media">
+        <div class="arte" data-arte="escena:hero" data-foto="hero.webp" data-eager="1" data-alt="Rincón cálido con el Jarrón Arco, la Vela Ámbar encendida sobre la Bandeja Terra y libros"></div>
+        <span class="hero__vertical eyebrow hero__aparece" style="--d:1.1s">Objetos cotidianos</span>
+        <svg class="hero__sello hero__aparece" style="--d:1.2s" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="circulo" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+          <text><textPath href="#circulo">Hecho a mano · Para durar · </textPath></text>
+          <path d="M60.8 44.6c4.8 1 8.3 5.2 8 10.4-.3 5.3-4.1 9.2-8.7 9.1-4.7-.1-8.2-4.2-7.9-9.4.3-5.7 4.1-10.9 8.6-10.1Z" fill="currentColor" transform="translate(0 6)"/>
+        </svg>
+        <figcaption class="hero__pie hero__aparece" style="--d:1.3s">
+          <span>En la imagen</span>
+          <a href="producto.html?p=jarron-arco">Jarrón Arco</a>
+          <a href="producto.html?p=vela-ambar">Vela Ámbar</a>
+          <a href="producto.html?p=bandeja-terra">Bandeja Terra</a>
+        </figcaption>
+      </figure>
+
+      <a class="hero__scroll eyebrow hero__aparece" style="--d:1.4s" href="#mood" aria-label="Bajar a la siguiente sección">
+        Scroll <svg class="icono" aria-hidden="true"><use href="#i-abajo"/></svg>
+      </a>
+    </section>
+
+    <!-- 02 · Shop the mood -->
+    <section class="seccion mood" id="mood" aria-labelledby="mood-titulo">
+      <div class="wrap">
+        <header class="mood__cabeza">
+          <div>
+            <p class="eyebrow eyebrow--linea" data-reveal>02 — Shop the mood</p>
+            <h2 class="h2 lineas" id="mood-titulo" style="margin-top:24px" data-reveal>
+              <span class="l" style="--i:0"><span>Tu casa también tiene</span></span>
+              <span class="l" style="--i:1"><span>una <em>personalidad.</em></span></span>
+            </h2>
+          </div>
+          <p class="lead" data-reveal style="--d:150ms">Elegí piezas que hablen de vos, mezclá texturas, aromas y formas y construí un espacio que se sienta realmente tuyo.</p>
+        </header>
+
+        <div class="mood__grilla">
+          <a class="mood__card" href="coleccion.html?cat=aromas" data-reveal>
+            <div class="arte" data-reveal="cortina" data-arte="escena:calma" data-foto="mood-calma.webp" data-alt="Velas encendidas en un ambiente oscuro y cálido"></div>
+            <span class="mood__num">i.</span>
+            <div class="mood__texto"><h3>Calma</h3><p>Velas + aromas</p></div>
+            <span class="mood__explorar">Explorar <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></span>
+          </a>
+          <a class="mood__card" href="coleccion.html?cat=ceramica,decoracion" data-reveal style="--d:120ms">
+            <div class="arte" data-reveal="cortina" style="--d:120ms" data-arte="escena:tierra" data-foto="mood-tierra.webp" data-alt="Jarrón de cerámica terracota con ramas secas y un cuenco"></div>
+            <span class="mood__num">ii.</span>
+            <div class="mood__texto"><h3>Tierra</h3><p>Cerámica + objetos</p></div>
+            <span class="mood__explorar">Explorar <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></span>
+          </a>
+          <a class="mood__card" href="coleccion.html?cat=sets" data-reveal style="--d:240ms">
+            <div class="arte" data-reveal="cortina" style="--d:240ms" data-arte="escena:ritual" data-foto="mood-ritual.webp" data-alt="Bandeja con vela, difusor y una taza"></div>
+            <span class="mood__num">iii.</span>
+            <div class="mood__texto"><h3>Ritual</h3><p>Sets + pequeños detalles</p></div>
+            <span class="mood__explorar">Explorar <svg class="icono" aria-hidden="true"><use href="#i-flecha"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · Favoritos -->
+    <section class="seccion" id="favoritos" aria-labelledby="fav-titulo" style="padding-top:0">
+      <div class="wrap">
+        <header class="cabeza cabeza--dividida">
+          <div>
+            <p class="eyebrow eyebrow--linea" data-reveal>03 — Favoritos</p>
+            <h2 class="h2" id="fav-titulo" style="margin-top:24px" data-reveal>Los favoritos de <em>NÖMA.</em></h2>
+          </div>
+          <div data-reveal style="--d:150ms">
+            <p class="lead">Esos objetos que terminan encontrando un lugar en cualquier rincón.</p>
+            <a class="link" href="coleccion.html">Ver toda la colección <svg class="icono flecha" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+          </div>
+        </header>
+        <div class="grilla grilla--4" data-favoritos></div>
+      </div>
+    </section>
+
+    <!-- 04 · Editorial / manifiesto -->
+    <section class="seccion editorial" id="historia" aria-labelledby="historia-titulo" style="padding-top:clamp(40px,5vw,80px)">
+      <div class="wrap editorial__grilla">
+        <p class="editorial__folio eyebrow" data-reveal><span>N.º 04 — Manifiesto</span><span>NÖMA</span></p>
+        <h2 class="editorial__titulo lineas" id="historia-titulo" data-reveal>
+          <span class="l" style="--i:0"><span>No vendemos</span></span>
+          <span class="l" style="--i:1"><span>cosas.</span></span>
+          <span class="l" style="--i:2"><span><em>Creamos</em></span></span>
+          <span class="l" style="--i:3"><span><em>atmósferas.</em></span></span>
+        </h2>
+        <figure class="editorial__img arte" data-reveal="cortina" data-arte="escena:editorial" data-foto="editorial.webp" data-alt="Jarrón crudo con ramas junto a una ventana, luz de tarde"></figure>
+        <figure class="editorial__img2 arte" data-reveal="cortina" style="--d:200ms" data-arte="escena:editorial2" data-foto="editorial-detalle.webp" data-alt="Taza de cerámica sobre fondo terracota"></figure>
+        <div class="editorial__texto" data-reveal style="--d:120ms">
+          <p>Una vela encendida al final del día. Una taza sobre una bandeja. La textura de una pieza hecha a mano. NÖMA nace de esos pequeños momentos.</p>
+          <p style="font-size:15px;color:var(--muted)">Trabajamos con talleres chicos, en tandas cortas y con materiales nobles. Cada pieza se elige para acompañarte durante años, no durante una temporada.</p>
+          <span class="editorial__firma">— El equipo de NÖMA</span>
+          <a class="link" href="coleccion.html">Conocer las piezas <svg class="icono flecha" aria-hidden="true"><use href="#i-flecha"/></svg></a>
+        </div>
+      </div>
+      <p class="editorial__pagina" aria-hidden="true">04</p>
+    </section>
+
+    <!-- 05 · Detalle memorable -->
+    <section class="rincon" data-rincon aria-labelledby="rincon-titulo">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--linea" style="margin-bottom:32px" data-reveal>05 — Un lugar para todo</p>
+        <h2 class="rincon__frase" id="rincon-titulo" data-reveal>
+          Encontrá un rincón para
+          <button class="rincon__gatillo" type="button" data-gatillo aria-expanded="false" aria-controls="rincon-objetos">cada cosa</button>.
+        </h2>
+        <p class="rincon__pista eyebrow" data-reveal style="--d:200ms"><svg class="icono" aria-hidden="true"><use href="#i-mano"/></svg> Pasá el mouse (o tocá) “cada cosa”</p>
+      </div>
+      <div class="rincon__objetos" id="rincon-objetos" aria-hidden="true">
+        <div class="flota" style="--x:12%;--y:26%;--w:130px;--r:-8deg;--i:0;--p:40px"><div data-arte="suelto:vela"></div></div>
+        <div class="flota" style="--x:86%;--y:22%;--w:150px;--r:7deg;--i:1;--p:-30px"><div data-arte="suelto:jarron"></div></div>
+        <div class="flota" style="--x:22%;--y:78%;--w:150px;--r:6deg;--i:2;--p:-44px"><div data-arte="suelto:cuenco"></div></div>
+        <div class="flota" style="--x:80%;--y:76%;--w:130px;--r:-6deg;--i:3;--p:36px"><div data-arte="suelto:difusor"></div></div>
+        <div class="flota" style="--x:50%;--y:12%;--w:92px;--r:12deg;--i:4;--p:24px"><div data-arte="suelto:taza"></div></div>
+        <div class="flota" style="--x:6%;--y:54%;--w:120px;--r:-4deg;--i:5;--p:-24px"><div data-arte="suelto:planta"></div></div>
+        <div class="flota" style="--x:94%;--y:50%;--w:150px;--r:4deg;--i:6;--p:30px"><div data-arte="suelto:bandeja"></div></div>
+      </div>
+    </section>
+
+    <!-- 06 · Producto destacado -->
+    <section class="seccion ritual" id="ritual" aria-labelledby="ritual-titulo">
+      <div class="wrap ritual__grilla">
+        <figure class="ritual__media">
+          <div class="arte" data-reveal="cortina" data-arte="producto:set-ritual:0" data-foto="set-ritual-1.webp" data-alt="Set Ritual de Noche: Vela Ámbar, Difusor Bosque y Bandeja Terra"></div>
+          <span class="etiqueta etiqueta--terra ritual__sello">Set especial</span>
+          <div class="ritual__precio-flotante" data-reveal style="--d:300ms">
+            <span class="eyebrow">El set</span>
+            <strong>USD 89</strong>
+            <s>USD 106 por separado</s>
+          </div>
+        </figure>
+        <div class="ritual__info">
+          <p class="eyebrow eyebrow--linea" data-reveal>06 — El ritual NÖMA</p>
+          <h2 class="h1 lineas" id="ritual-titulo" data-reveal>
+            <span class="l" style="--i:0"><span>Una hora</span></span>
+            <span class="l" style="--i:1"><span><em>para vos.</em></span></span>
+          </h2>
+          <p class="lead" data-reveal style="--d:100ms">Un pequeño ritual para bajar el ritmo, apagar el ruido y hacer espacio para vos.</p>
+          <ul class="ritual__incluye" data-reveal style="--d:160ms">
+            <li><div class="arte" data-arte="producto:vela-ambar:0"></div><strong>Vela Ámbar</strong><span>200 g</span></li>
+            <li><div class="arte" data-arte="producto:difusor-bosque:0"></div><strong>Difusor Bosque</strong><span>200 ml</span></li>
+            <li><div class="arte" data-arte="producto:bandeja-terra:0"></div><strong>Bandeja Terra</strong><span>32 cm</span></li>
+          </ul>
+          <div class="ritual__acciones" data-reveal style="--d:220ms">
+            <button class="btn" type="button" data-agregar="set-ritual" data-variante="">
+              <span class="btn__txt">Quiero mi ritual</span> <svg class="icono flecha" aria-hidden="true"><use href="#i-flecha"/></svg>
+              <span class="btn__ok" aria-hidden="true">Agregado ✓</span>
+            </button>
+            <a class="link" href="producto.html?p=set-ritual">Ver el detalle</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 · Beneficios -->
+    <section class="beneficios" aria-label="Beneficios">
+      <div class="wrap">
+        <ul class="beneficios__lista">
+          <li data-reveal><svg class="icono" aria-hidden="true"><use href="#i-camion"/></svg><strong>Envíos a todo el país</strong><span>Preparado con cuidado.</span></li>
+          <li data-reveal style="--d:80ms"><svg class="icono" aria-hidden="true"><use href="#i-hoja"/></svg><strong>Diseño que perdura</strong><span>Piezas pensadas para acompañarte.</span></li>
+          <li data-reveal style="--d:160ms"><svg class="icono" aria-hidden="true"><use href="#i-candado"/></svg><strong>Compra segura</strong><span>Pagos protegidos.</span></li>
+          <li data-reveal style="--d:240ms"><svg class="icono" aria-hidden="true"><use href="#i-regalo"/></svg><strong>Hecho para regalar</strong><span>Packaging especial disponible.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 08 · Comunidad -->
+    <section class="seccion comunidad" aria-labelledby="comunidad-titulo">
+      <div class="wrap">
+        <header class="cabeza cabeza--dividida">
+          <div>
+            <p class="eyebrow eyebrow--linea" data-reveal>07 — Comunidad</p>
+            <h2 class="h2" id="comunidad-titulo" style="margin-top:24px" data-reveal>Así se vive <em>NÖMA.</em></h2>
+          </div>
+          <div data-reveal style="--d:150ms">
+            <p class="lead">Casas reales, rincones reales. Compartí el tuyo con #nomaencasa.</p>
+            <a class="link" href="https://instagram.com/" target="_blank" rel="noopener"><svg class="icono" aria-hidden="true"><use href="#i-ig"/></svg> @noma.home</a>
+          </div>
+        </header>
+        <div class="comunidad__grilla">
+          <a class="comunidad__item" href="https://instagram.com/" target="_blank" rel="noopener" data-reveal><div class="arte" data-arte="escena:living" data-foto="comunidad-living.webp" data-alt="Living con planta y Manta Lino"></div><div class="comunidad__capa"><strong><svg class="icono" aria-hidden="true"><use href="#i-ig"/></svg>@noma.home</strong><span>El living de Sofi, en Montevideo</span></div></a>
+          <a class="comunidad__item" href="https://instagram.com/" target="_blank" rel="noopener" data-reveal style="--d:80ms"><div class="arte" data-arte="escena:dormitorio" data-foto="comunidad-dormitorio.webp" data-alt="Dormitorio con mantas y una vela"></div><div class="comunidad__capa"><strong><svg class="icono" aria-hidden="true"><use href="#i-ig"/></svg>@noma.home</strong><span>Domingo lento</span></div></a>
+          <a class="comunidad__item" href="https://instagram.com/" target="_blank" rel="noopener" data-reveal style="--d:160ms"><div class="arte" data-arte="escena:mesa" data-foto="comunidad-mesa.webp" data-alt="Mesa con bandeja y tazas"></div><div class="comunidad__capa"><strong><svg class="icono" aria-hidden="true"><use href="#i-ig"/></svg>@noma.home</strong><span>Café para dos</span></div></a>
+          <a class="comunidad__item" href="https://instagram.com/" target="_blank" rel="noopener" data-reveal style="--d:240ms"><div class="arte" data-arte="escena:velaCerca" data-foto="comunidad-vela.webp" data-alt="Vela Ámbar encendida de noche"></div><div class="comunidad__capa"><strong><svg class="icono" aria-hidden="true"><use href="#i-ig"/></svg>@noma.home</strong><span>La hora ámbar</span></div></a>
+          <a class="comunidad__item" href="https://instagram.com/" target="_blank" rel="noopener" data-reveal style="--d:120ms"><div class="arte" data-arte="escena:ceramica" data-foto="comunidad-ceramica.webp" data-alt="Cuencos de cerámica apilados"></div><div class="comunidad__capa"><strong><svg class="icono" aria-hidden="true"><use href="#i-ig"/></svg>@noma.home</strong><span>Tres tonos de tierra</span></div></a>
+          <a class="comunidad__item" href="https://instagram.com/" target="_blank" rel="noopener" data-reveal style="--d:200ms"><div class="arte" data-arte="escena:detalle" data-foto="comunidad-detalle.webp" data-alt="Difusor Bosque junto a piedras"></div><div class="comunidad__capa"><strong><svg class="icono" aria-hidden="true"><use href="#i-ig"/></svg>@noma.home</strong><span>El aire de afuera, adentro</span></div></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

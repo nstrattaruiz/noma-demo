@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Colección · NÖMA</title>
+  <meta name="description" content="Velas, difusores, cerámica, textiles y sets. Piezas para darle personalidad a cada rincón.">
+  <meta name="theme-color" content="#F5F1EA">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="css/ns-firma.css">
+  <link rel="stylesheet" href="css/noma.css">
+  <script src="js/fotos.js" defer></script>
+  <script src="js/productos.js" defer></script>
+  <script src="js/layout.js" defer></script>
+  <script src="js/arte.js" defer></script>
+  <script src="js/ns-firma.js" defer></script>
+  <script src="js/noma.js" defer></script>
+</head>
+<body data-pagina="coleccion">
+  <main id="contenido">
+
+    <section class="col-hero" aria-labelledby="col-titulo">
+      <div class="wrap">
+        <div class="col-hero__grilla">
+          <div>
+            <p class="eyebrow eyebrow--linea">NÖMA · Colección otoño 2026</p>
+            <h1 class="display col-hero__titulo" id="col-titulo" style="margin-top:22px">
+              <span data-col-titulo>Objetos</span><sup data-col-n>08</sup>
+            </h1>
+          </div>
+          <p class="lead" data-col-texto>Piezas para darle personalidad a cada rincón.</p>
+        </div>
+        <nav class="col-cats" aria-label="Categorías" data-col-cats></nav>
+        <div class="arte col-banda" data-arte="escena:coleccion" data-foto="coleccion-banda.webp" data-eager="1" data-alt="Estante con piezas NÖMA: planta, jarrón, vela, bandeja y manta"></div>
+      </div>
+    </section>
+
+    <div class="col-barra">
+      <form class="wrap col-barra__fila" data-form-filtros aria-label="Filtros">
+        <div class="filtros" data-filtros></div>
+        <button class="col-barra__movil" type="button" data-abrir-filtros>
+          <svg class="icono" aria-hidden="true"><use href="#i-filtro"/></svg> Filtrar y ordenar <span data-activos-n></span>
+        </button>
+        <span class="col-barra__cuenta" data-cuenta aria-live="polite"></span>
+        <div data-orden-caja></div>
+      </form>
+    </div>
+
+    <section class="wrap" style="padding-bottom:var(--space)" aria-label="Productos">
+      <div class="activos" data-activos></div>
+      <div class="grilla grilla--4" data-grilla></div>
+    </section>
+
+    <!-- Hoja de filtros (celular y tablet) -->
+    <form class="hoja" id="hoja-filtros" role="dialog" aria-modal="true" aria-labelledby="hoja-titulo" aria-hidden="true" inert data-form-hoja>
+      <div class="hoja__cabeza">
+        <p class="eyebrow" id="hoja-titulo">Filtrar y ordenar</p>
+        <button class="redondo" type="button" data-cerrar aria-label="Cerrar filtros"><svg class="icono" aria-hidden="true"><use href="#i-cerrar"/></svg></button>
+      </div>
+      <div class="hoja__cuerpo" data-hoja-cuerpo></div>
+      <div class="hoja__pie">
+        <button class="btn btn--ghost" type="button" data-hoja-limpiar>Limpiar</button>
+        <button class="btn" type="submit"><span data-cuenta-hoja>Ver resultados</span></button>
+      </div>
+    </form>
+
+  </main>
+</body>
+</html>
